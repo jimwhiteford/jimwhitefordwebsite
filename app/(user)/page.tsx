@@ -1,11 +1,20 @@
-import React from 'react'
+import { groq } from "next-sanity"
+import {client} from "../../sanity/lib/client"
+import BlogList from "../components/BlogList"
 
-function page() {
+const query = groq`
+  *[_type=='post'] {
+    ...,
+    author->,
+    categories[]->
+  } | order(_createdAt desc)
+`
+
+async function Homepage() {
+  const posts = await client.fetch(query)
   return (
-    <div>
-      
-    </div>
+    <BlogList posts={posts} />
   )
 }
 
-export default page
+export default Homepage

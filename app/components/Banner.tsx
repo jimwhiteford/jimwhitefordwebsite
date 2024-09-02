@@ -14,7 +14,7 @@ function Banner() {
             </h2>
         </div>
         <p className="mt-5 md:mt-2 text-gray-400 max-w-sm">
-            Sailing adventure  | DIY guides | Navigation information & More!
+            Sailing adventures | DIY guides | Navigation & much More!
         </p>
     </div>
   )
