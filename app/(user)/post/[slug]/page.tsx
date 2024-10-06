@@ -1,4 +1,4 @@
-import { client } from "@/sanity/lib/client";
+import { client, sanityFetch } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import { groq } from "next-sanity";
 import Image from "next/image";
@@ -10,8 +10,22 @@ type Props = {
     slug: string;
   };
 };
+// export const revalidate = 0;
+// export const dynamic = "auto";
+export const dynamic = "force-dynamic";
 
-export const revalidate = 60;
+export async function generateStaticParams() {
+  const query = groq`*[_type=='post']
+  {
+    slug
+  }`;
+  const slugs: Post[] = await client.fetch(query);
+  const slugRoutes = slugs.map((slug) => slug.slug.current);
+  console.log(slugRoutes);
+  return slugRoutes.map((slug) => ({
+    slug: slug,
+  }));
+}
 
 async function Post({ params: { slug } }: Props) {
   const query = groq`*[_type=='post' && slug.current == $slug][0]{
@@ -63,7 +77,7 @@ async function Post({ params: { slug } }: Props) {
             <div>
               <h2 className="italic pt-10">{post.description}</h2>
               <div className="flex items-center justify-end mt-auto space-x-2">
-                {post.categories.map((category) => (
+                {post.categories.map((category: any) => (
                   <p
                     key={category._id}
                     className="bg-gray-800 text-white px-3 py-1 rounded-full text-sm font-semibold mt-4"
