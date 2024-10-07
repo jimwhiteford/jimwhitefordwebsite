@@ -1,14 +1,18 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = { 
-    
-    images: {
-        remotePatterns: [
-          {
-            protocol: 'https',
-            hostname: 'cdn.sanity.io',
-            port: '',
-            pathname: '/**',
-          },
-        ],}}
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+  },
+  experimental: {
+    taint: true,
+  },
+};
 
 export default nextConfig;

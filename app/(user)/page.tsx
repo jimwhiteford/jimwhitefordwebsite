@@ -2,6 +2,7 @@ import { groq } from "next-sanity";
 import { client, sanityFetch } from "@/sanity/lib/client";
 import BlogList from "../components/BlogList";
 
+export const revalidate = 60;
 const query = groq`
   *[_type=='post'] {
     ...,
@@ -10,15 +11,8 @@ const query = groq`
   } | order(_createdAt desc)
 `;
 
-export const revalidate = 60;
-
-async function getPosts() {
-  const posts = await client.fetch(query);
-  return posts;
-}
-
 async function Homepage() {
-  const posts = await getPosts();
+  const posts = await sanityFetch({ query: query });
   return <BlogList posts={posts} />;
 }
 
