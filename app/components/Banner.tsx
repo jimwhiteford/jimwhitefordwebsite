@@ -1,4 +1,15 @@
-function Banner() {
+import { groq } from "next-sanity";
+import { client, sanityFetch } from "@/sanity/lib/client";
+
+export const revalidate = 60;
+const query = groq`
+  *[_type=='category'] {
+    ...,
+  } 
+`;
+
+async function Banner() {
+  const categorys = await sanityFetch({ query: query });
   return (
     <div className="flex flex-col lg:flex-row lg:space-x-5 justify-between font-bold px-10 py-5 mb-10">
       <div>
@@ -10,9 +21,13 @@ function Banner() {
           </span>{" "}
         </h2>
       </div>
-      <p className="mt-5 md:mt-2 text-gray-400 max-w-sm">
-        Horticulture | Apiculture | Travel & More!
-      </p>
+      <div className="flex mt-5 md:mt-7 text-gray-500 text-lg max-w-sm">
+        {categorys.map((category: any) => (
+          <div key={category._id}>
+            <p className="mr-4">{category.title}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

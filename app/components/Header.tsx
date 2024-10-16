@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../public/logo.png";
+import logo1 from "../../public/honeyLogo.png";
 
 function Header() {
   return (
@@ -11,8 +12,8 @@ function Header() {
           <Image
             className="rounded-full"
             src={logo}
-            width={150}
-            height={150}
+            width={120}
+            height={120}
             alt="logo"
           />
         </Link>
