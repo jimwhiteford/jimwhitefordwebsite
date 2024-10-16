@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import { VisualEditing } from "next-sanity";
 import { draftMode } from "next/headers";
-// import BlogList from "../components/BlogList"
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,6 +35,7 @@ export default function RootLayout({
         {children}
         {draftMode().isEnabled && <VisualEditing />}
       </body>
+      <GoogleAnalytics gaId="G-K30J651RKJ" />
     </html>
   );
 }

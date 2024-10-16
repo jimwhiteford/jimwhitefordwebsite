@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
+    "@next/third-parties": "^14.2.15",
     "@portabletext/react": "^3.1.0",
     "@sanity/client": "^6.22.1",
     "@sanity/icons": "^3.4.0",
@@ -17,7 +18,7 @@
     "@sanity/react-loader": "^1.10.7",
     "@sanity/vision": "^3.56.0",
     "@sanity/visual-editing": "^2.1.10",
-    "next": "14.2.7",
+    "next": "^14.2.15",
     "next-sanity": "^9.5.0",
     "react": "^18",
     "react-dom": "^18",
