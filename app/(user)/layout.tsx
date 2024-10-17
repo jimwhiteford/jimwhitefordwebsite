@@ -10,8 +10,11 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "The Blog",
-  description: "Built by Jim Whiteford",
+  title: {
+    default: "The Blog",
+    template: "%s - The Blog",
+  },
+  description: "Welcome to my blog of passions and interests.",
 };
 
 export default function RootLayout({
@@ -38,21 +41,4 @@ export default function RootLayout({
       <GoogleAnalytics gaId="G-K30J651RKJ" />
     </html>
   );
-}
-
-{
-  /* <body className="max-w-7xl mx-auto">
-        {draftMode().isEnabled && (
-          <a
-            className="fixed right-0 bottom-0 bg-blue-500 text-white p-4 m-4"
-            href="/api/draft-mode/disable"
-          >
-            Disable preview mode
-          </a>
-        )}
-        <Header />
-        <Banner />
-        {children}
-        {draftMode().isEnabled && <VisualEditing />}
-      </body> */
 }
