@@ -2,6 +2,10 @@ import { groq } from "next-sanity";
 import { client, sanityFetch } from "@/sanity/lib/client";
 import BlogList from "../components/BlogList";
 
+// export const metadata: Metadata = {
+//   title: "Blog",
+// };
+
 export const revalidate = 60;
 const query = groq`
   *[_type=='post'] {
