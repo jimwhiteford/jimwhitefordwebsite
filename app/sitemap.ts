@@ -16,7 +16,7 @@ async function getBlogPosts() {
 
   const posts = await client.fetch(postSlugsQuery);
   return posts.map((post: Props) => ({
-    url: `${process.env.NEXT_PUBLIC_BASE_URL}/post/${post.slug}`,
+    url: `https://jimwhiteford.com/post/${post.slug}`,
     // lastModified: new Date(post.updatedAt)
   }));
 }
