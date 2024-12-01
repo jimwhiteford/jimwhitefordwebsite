@@ -1,5 +1,4 @@
 import urlFor from "@/sanity/lib/urlFor";
-import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import ClientSideRoute from "./ClientSideRoute";
 

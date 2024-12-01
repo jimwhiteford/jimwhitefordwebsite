@@ -6,6 +6,7 @@ import Banner from "../components/Banner";
 import { VisualEditing } from "next-sanity";
 import { draftMode } from "next/headers";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import NavBar from "../components/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,7 +35,8 @@ export default function RootLayout({
           </a>
         )}
         <Header />
-        <Banner />
+        <NavBar />
+        {/* <Banner /> */}
         {children}
         {draftMode().isEnabled && <VisualEditing />}
       </body>
