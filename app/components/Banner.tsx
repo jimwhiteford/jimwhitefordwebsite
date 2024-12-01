@@ -21,13 +21,13 @@ async function Banner() {
           </span>{" "}
         </h2>
       </div>
-      <div className="flex mt-5 md:mt-7 text-gray-500 text-lg max-w-sm">
+      {/* <div className="flex mt-5 md:mt-7 text-gray-500 text-lg max-w-sm">
         {categorys.map((category: any) => (
           <div key={category._id}>
             <p className="mr-4">{category.title}</p>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
