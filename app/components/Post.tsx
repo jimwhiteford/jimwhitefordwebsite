@@ -19,11 +19,11 @@ export function Post({ post }: { post: Post }) {
               fill
             />
           </div>
-          <section className="p-5 bg-[#006678] w-full">
+          <section className="p-5 bg-[#61690b] w-full">
             <div className="flex flex-col  justify-between gap-y-5">
               <div>
                 <h1 className="text-4xl font-extrabold">{post.title}</h1>
-                <p>
+                <p className="mt-3">
                   {new Date(post._createdAt).toLocaleDateString("en-US", {
                     day: "numeric",
                     month: "long",
@@ -32,13 +32,13 @@ export function Post({ post }: { post: Post }) {
                 </p>
               </div>
               <div className="flex items-center space-x-2">
-                <Image
+                {/* <Image
                   className="rounded-full"
                   src={urlFor(post.author.image).url()}
                   alt={post.author.name}
                   height={40}
                   width={40}
-                />
+                /> */}
                 <div className="w-64">
                   <h3 className="text-lg font-bold">{post.author.name}</h3>
                   {/* <div>TODO: author bio</div> */}
