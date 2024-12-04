@@ -4,6 +4,7 @@ import Image from "next/image";
 import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "@/app/components/RichTextComponents";
 import { urlFor } from "@/sanity/lib/image";
+import Toc from "./Toc";
 
 export function Post({ post }: { post: Post }) {
   return (
@@ -60,7 +61,8 @@ export function Post({ post }: { post: Post }) {
           </section>
         </div>
       </section>
-      <PortableText value={post.body} components={RichTextComponents} />
+      <Toc headings={post?.headings} />
+      <PortableText value={post?.body} components={RichTextComponents} />
     </article>
   );
 }

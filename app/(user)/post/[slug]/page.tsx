@@ -40,14 +40,17 @@ export default async function Page({ params }: { params: QueryParams }) {
   const query = groq`*[_type=='post' && slug.current == $slug][0]{
         ...,
         author->,
+        "headings": body[style in ["h2", "h3", "h4", "h5"]],
         categories[]->
       }`;
   const post = await sanityFetch({
     query: query,
     params,
   });
+
   if (!post) {
     return notFound();
   }
+
   return <Post post={post} />;
 }

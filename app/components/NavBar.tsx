@@ -45,7 +45,7 @@ const navItems: NavItem[] = [
 
 function NavBar() {
   return (
-    <div className="grow mb-16 mt-4">
+    <div className="grow mb-16 mt-4 font-bold">
       <div className="flex items-center justify-center ">
         {navItems.map((item, i) => (
           <Link
@@ -75,6 +75,7 @@ function NavBar() {
           </Link>
         ))}
       </div>
+      <hr className="border-[#006678] mb-10 mt-10" />
     </div>
   );
 }
