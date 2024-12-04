@@ -20,33 +20,12 @@ export const RichTextComponents = {
   },
   list: {
     bullet: ({ children }: any) => (
-      <ul className="ml-10 py-5 list-disc space-y-5">{children}</ul>
+      <ul className="ml-10 py-5 list-disc space-y-5 text-lg">{children}</ul>
     ),
     number: ({ children }: any) => (
-      <ol className="mt-lg list-decimal">{children}</ol>
+      <ol className="mt-lg list-decimal text-lg">{children}</ol>
     ),
   },
-  // block: {
-  //   h1: ({ children }: any) => (
-  //     <h1 id={children} className="text-5xl py-10 font-bold">
-  //       {children}
-  //     </h1>
-  //   ),
-  //   h2: ({ children }: any) => (
-  //     <h2 id={children} className="text-4xl py-10 font-bold">
-  //       {children}
-  //     </h2>
-  //   ),
-  //   h3: ({ children }: any) => (
-  //     <h3 id={children} className="text-3xl py-10 font-bold">
-  //       {children}
-  //     </h3>
-  //   ),
-  //   h4: ({ children }: any) => (
-  //     <h4 id={children} className="text-2xl py-10 font-bold">
-  //       {children}
-  //     </h4>
-  //   ),
   block: {
     h1: ({ value }: any) => (
       <h2
@@ -96,6 +75,7 @@ export const RichTextComponents = {
         {value.children[0].text}
       </h6>
     ),
+    normal: ({ children }: any) => <p className="text-lg mb-7">{children}</p>,
 
     blockquote: ({ children }: any) => (
       <blockquote className="border-l-[#006678] border-l-4 pl-5 py-5 my-5">
@@ -111,6 +91,7 @@ export const RichTextComponents = {
       return (
         <Link
           href={value.href}
+          target="_blank"
           rel={rel}
           className="underline decoration-[#006678] hover:decoration-black"
         >

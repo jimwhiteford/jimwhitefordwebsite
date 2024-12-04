@@ -1,6 +1,7 @@
 import urlFor from "@/sanity/lib/urlFor";
 import Image from "next/image";
 import ClientSideRoute from "./ClientSideRoute";
+import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 
 type Props = {
   posts: Post[];
@@ -31,9 +32,9 @@ function BlogList({ posts }: Props) {
                         year: "numeric",
                       })}
                     </p>
-                    <p className="line-clamp-2 text-white text-sm mt-2 italic">
+                    {/* <p className="line-clamp-2 text-white text-sm mt-2 italic">
                       {post.description}
-                    </p>
+                    </p> */}
                   </div>
                   <div className="flex flex-col md:flex-row gap-y-2 md:gap-x-2 items-center">
                     {post.categories.map((category) => (
@@ -49,12 +50,12 @@ function BlogList({ posts }: Props) {
               </div>
               <div className="mt-5 flex-1">
                 {/* <p className="underline text-lg font-bold">{post.title}</p> */}
-                {/* <p className="line-clamp-2 text-gray-500">{post.description}</p> */}
+                <p className="line-clamp-2 text-gray-500">{post.description}</p>
               </div>
-              {/* <p className="mt-5 font-bold flex items-center group-hover:underline">
+              <p className="mt-5 font-bold flex items-center group-hover:underline">
                 Read Post
                 <ArrowUpRightIcon className="ml-2 h-4 w-4" />
-              </p> */}
+              </p>
             </div>
           </ClientSideRoute>
         ))}
