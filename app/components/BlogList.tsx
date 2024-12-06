@@ -25,26 +25,29 @@ function BlogList({ posts }: Props) {
                 <div className="absolute bottom-0 w-full bg-opacity-20 bg-black backdrop-blur-lg rounded drop-shadow-lg text-white p-5 flex justify-between">
                   <div>
                     <p className="text-2xl font-bold">{post.title}</p>
-                    <p>
-                      {new Date(post._createdAt).toLocaleDateString("en-US", {
-                        day: "numeric",
-                        month: "long",
-                        year: "numeric",
-                      })}
-                    </p>
+                    <div className="flex items-center justify-between">
+                      <p className="flex">
+                        {new Date(post._createdAt).toLocaleDateString("en-US", {
+                          day: "numeric",
+                          month: "long",
+                          year: "numeric",
+                        })}
+                      </p>
+                      <div className="flex">
+                        {post.categories.map((category) => (
+                          <div
+                            key={category._id}
+                            className="bg-[#a49104] text-center text-black px-3 py-1 rounded-full text-sm font-semibold"
+                          >
+                            <p>{category.title}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
                     {/* <p className="line-clamp-2 text-white text-sm mt-2 italic">
                       {post.description}
                     </p> */}
-                  </div>
-                  <div className="flex flex-col md:flex-row gap-y-2 md:gap-x-2 items-center">
-                    {post.categories.map((category) => (
-                      <div
-                        key={category._id}
-                        className="bg-[#006678] text-center text-black px-3 py-1 rounded-full text-sm font-semibold"
-                      >
-                        <p>{category.title}</p>
-                      </div>
-                    ))}
                   </div>
                 </div>
               </div>

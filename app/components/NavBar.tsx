@@ -15,7 +15,7 @@ const navItems: NavItem[] = [
     children: [
       {
         label: "Beekeeping",
-        link: "/category/apiculture",
+        link: "/category/beekeeping",
       },
       // {
       //   label: "Chickens",
@@ -28,20 +28,34 @@ const navItems: NavItem[] = [
     link: "#",
     children: [
       {
-        label: "Off-Grid Living",
-        link: "#",
+        label: "Off-Grid",
+        link: "/category/off-grid",
       },
-      {
-        label: "DIY Projects",
-        link: "#",
-      },
+      // {
+      //   label: "DIY Projects",
+      //   link: "#",
+      // },
+    ],
+  },
+  {
+    label: "Horticulture",
+    link: "#",
+    children: [
+      // {
+      //   label: "Agroforestry",
+      //   link: "#",
+      // },
+      // {
+      //   label: "DIY Projects",
+      //   link: "#",
+      // },
     ],
   },
 ];
 
 function NavBar() {
   return (
-    <div className="grow mb-16 mt-4 font-bold">
+    <div className="grow mb-16 mt-4 font-semibold">
       <div className="flex items-center justify-center text-lg">
         {navItems.map((item, i) => (
           <Link
@@ -61,7 +75,7 @@ function NavBar() {
                   <Link
                     key={i}
                     href={ch.link ?? "#"}
-                    className="flex cursor-pointer items-center py-1 pl-6 pr-6 text-black hover:text-[#a49104]"
+                    className="flex cursor-pointer items-center text-md py-1 pl-6 pr-6 text-black hover:text-[#a49104]"
                   >
                     {ch.label}
                   </Link>

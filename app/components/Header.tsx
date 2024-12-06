@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo2 from "../../public/logo2.png";
-import YT from "../../public/YT.png";
+import YT from "../../public/youtube_3938026.png";
+import insta from "../../public/instagram_2111463.png";
 
 function Header() {
   return (
@@ -21,22 +22,33 @@ function Header() {
       <div className="flex">
         <Link
           href="/"
-          className="px-3 py-3 text-lg hover:text-[#a49104] text-black"
+          className="px-3 py-3 text-xl hover:text-[#a49104] text-black"
         >
           Home
         </Link>
         <Link
           href="/"
-          className="px-3 py-3 text-lg hover:text-[#a49104] text-black"
+          className="mr-10 px-3 py-3 text-xl hover:text-[#a49104] text-black"
         >
           About
         </Link>
+        <Link
+          href="https://www.instagram.com/jimwhitefordhomesteading"
+          target="_blank"
+        >
+          <Image
+            className="mr-4 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 ..."
+            src={insta}
+            width={40}
+            alt="insta"
+          />
+        </Link>
         <Link href="https://www.youtube.com/@offgridjim" target="_blank">
           <Image
-            className="ml-10 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 ..."
+            className="transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 ..."
             src={YT}
-            width={75}
-            alt="ytlogo"
+            width={40}
+            alt="yt"
           />
         </Link>
       </div>
