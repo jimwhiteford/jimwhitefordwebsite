@@ -7,7 +7,7 @@ import { VisualEditing } from "next-sanity";
 import { draftMode } from "next/headers";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import NavBar from "../components/NavBar";
-import AdSense from "../components/Adsense";
+import AdSense from "../components/AdSense";
 
 const inter = Inter({ subsets: ["latin"] });
 
