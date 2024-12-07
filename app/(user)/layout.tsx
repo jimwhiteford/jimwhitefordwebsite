@@ -7,6 +7,7 @@ import { VisualEditing } from "next-sanity";
 import { draftMode } from "next/headers";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import NavBar from "../components/NavBar";
+import AdSense from "../components/Adsense";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html>
+      <head>
+        <AdSense />
+      </head>
       <body className="max-w-7xl mx-auto">
         {draftMode().isEnabled && (
           <a
