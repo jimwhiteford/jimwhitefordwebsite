@@ -23,7 +23,6 @@ export async function generateStaticParams() {
 }
 
 export default async function Category({ params }: { params: QueryParams }) {
-  // console.log(params);
   const query = groq`*[_type == "post" && "${params.slug}" in categories[]->slug.current]{
         ...,
     author->,
@@ -38,6 +37,5 @@ export default async function Category({ params }: { params: QueryParams }) {
   `;
   const posts = await sanityFetch({ query: query, params });
   const cat = await sanityFetch({ query: query2 });
-  console.log(cat);
   return <BlogList posts={posts} category={cat} />;
 }

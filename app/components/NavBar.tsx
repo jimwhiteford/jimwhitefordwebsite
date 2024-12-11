@@ -45,10 +45,10 @@ const navItems: NavItem[] = [
       //   label: "Agroforestry",
       //   link: "#",
       // },
-      // {
-      //   label: "DIY Projects",
-      //   link: "#",
-      // },
+      {
+        label: "Gardening",
+        link: "/category/gardening",
+      },
     ],
   },
 ];
