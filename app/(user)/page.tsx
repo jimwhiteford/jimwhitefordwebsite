@@ -1,6 +1,7 @@
 import { groq } from "next-sanity";
 import { client, sanityFetch } from "@/sanity/lib/client";
-import BlogList from "../components/BlogList";
+import HeroBlogList from "../components/HeroBlogList";
+import Hero from "../components/Hero";
 
 // export const metadata: Metadata = {
 //   title: "Blog",
@@ -8,7 +9,7 @@ import BlogList from "../components/BlogList";
 
 export const revalidate = 60;
 const query = groq`
-  *[_type=='post'] {
+  *[_type=='post'][0..2] {
     ...,
     author->,
     categories[]->
@@ -17,7 +18,12 @@ const query = groq`
 
 async function Homepage() {
   const posts = await sanityFetch({ query: query });
-  return <BlogList posts={posts} />;
+  return (
+    <div>
+      <Hero />
+      <HeroBlogList posts={posts} />
+    </div>
+  );
 }
 
 export default Homepage;

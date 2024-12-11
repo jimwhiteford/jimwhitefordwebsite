@@ -1,26 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo2 from "../../public/theone.png";
+import logo2 from "../../public/logo2.png";
 import YT from "../../public/youtube_3938026.png";
 import insta from "../../public/instagram_2111463.png";
 
 function Header() {
   return (
-    <header className="flex items-center justify-between space-x-2 font-bold py-5 px-10">
-      <div className="flex">
-        <Link href="/">
-          <Image src={logo2} width={300} alt="logo" />
-        </Link>
-      </div>
-      <div className="flex font-medium space-x-5">
-        <Link href="/" className="text-lg hover:underline text-black">
-          Home
-        </Link>
-        <Link href="/" className="text-lg hover:underline text-black">
-          About
-        </Link>
-
+    <header className="flex items-center justify-between font-bold px-10 py-5">
+      <div className="flex space-x-5">
         <Link
           href="https://www.instagram.com/jimwhitefordhomesteading"
           target="_blank"
@@ -39,6 +27,19 @@ function Header() {
             width={30}
             alt="yt"
           />
+        </Link>
+      </div>
+      <div className="">
+        <Link href="/">
+          <Image className="rounded-full" src={logo2} width={130} alt="logo" />
+        </Link>
+      </div>
+      <div className="flex text-black text-lg font-medium space-x-4">
+        <Link href="/" className="hover:text-[#a49104]">
+          Home
+        </Link>
+        <Link href="/" className="hover:text-[#a49104]">
+          About
         </Link>
       </div>
     </header>

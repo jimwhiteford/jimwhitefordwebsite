@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../../app/globals.css";
 import Header from "../components/Header";
-import Banner from "../components/Banner";
 import { VisualEditing } from "next-sanity";
 import { draftMode } from "next/headers";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import NavBar from "../components/NavBar";
 import AdSense from "../components/AdSense";
+import Footer from "../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,6 +44,7 @@ export default function RootLayout({
         {children}
         {draftMode().isEnabled && <VisualEditing />}
       </body>
+      <Footer />
       <GoogleAnalytics gaId="G-K30J651RKJ" />
     </html>
   );

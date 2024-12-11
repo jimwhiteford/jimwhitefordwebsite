@@ -20,10 +20,10 @@ export const RichTextComponents = {
   },
   list: {
     bullet: ({ children }: any) => (
-      <ul className="ml-10 py-5 list-disc space-y-5 text-lg">{children}</ul>
+      <ul className="ml-10 py-5 list-disc space-y-5 text-xl">{children}</ul>
     ),
     number: ({ children }: any) => (
-      <ol className="mt-lg list-decimal text-lg">{children}</ol>
+      <ol className="mt-lg list-decimal text-xl">{children}</ol>
     ),
   },
   block: {
@@ -75,7 +75,7 @@ export const RichTextComponents = {
         {value.children[0].text}
       </h6>
     ),
-    normal: ({ children }: any) => <p className="text-lg mb-7">{children}</p>,
+    normal: ({ children }: any) => <p className="text-xl mb-7">{children}</p>,
 
     blockquote: ({ children }: any) => (
       <blockquote className="border-l-[#006678] border-l-4 pl-5 py-5 my-5">
