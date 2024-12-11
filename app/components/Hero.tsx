@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <div className="grid px-10 md:grid-cols-2 items-center mb-20">
+    <div className="grid px-10 pt-5 md:grid-cols-2 items-center mb-20">
       <div className="ml-32 md:order-1 hidden md:block">
         <Image src={heroImage} alt="homestead man" width={400} />
       </div>

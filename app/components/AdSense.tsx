@@ -1,8 +1,5 @@
 import React from "react";
 
-// type AdsenseTypes = {
-//   pId: string;
-// };
 const AdSense = () => {
   return (
     <script
