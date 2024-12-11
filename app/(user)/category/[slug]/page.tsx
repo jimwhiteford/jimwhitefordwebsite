@@ -37,5 +37,6 @@ export default async function Category({ params }: { params: QueryParams }) {
   `;
   const posts = await sanityFetch({ query: query, params });
   const cat = await sanityFetch({ query: query2 });
+
   return <BlogList posts={posts} category={cat} />;
 }
