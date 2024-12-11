@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo2 from "../../public/theone.png";
+import logo2 from "../../public/logogreen.png";
 import YT from "../../public/youtube_3938026.png";
 import insta from "../../public/instagram_2111463.png";
 

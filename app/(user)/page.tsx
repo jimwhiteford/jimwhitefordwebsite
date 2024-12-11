@@ -2,6 +2,7 @@ import { groq } from "next-sanity";
 import { client, sanityFetch } from "@/sanity/lib/client";
 import HeroBlogList from "../components/HeroBlogList";
 import Hero from "../components/Hero";
+import AdBanner from "../components/AdBanner";
 
 // export const metadata: Metadata = {
 //   title: "Blog",
@@ -21,6 +22,11 @@ async function Homepage() {
   return (
     <div>
       <Hero />
+      <AdBanner
+        dataAdFormat="auto"
+        dataFullWidthResponsive={true}
+        dataAdSlot="5081905516"
+      />
       <HeroBlogList posts={posts} />
     </div>
   );

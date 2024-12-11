@@ -28,6 +28,10 @@ export default function RootLayout({
     <html>
       <head>
         <AdSense />
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-7971187348248989"
+        ></meta>
       </head>
       <body className="max-w-7xl mx-auto">
         {draftMode().isEnabled && (
