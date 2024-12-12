@@ -56,7 +56,7 @@ const navItems: NavItem[] = [
 function NavBar() {
   return (
     <div className="grow mb-16 font-semibold uppercase">
-      <div className="flex items-center justify-center text-md tracking-wide space-x-5">
+      <div className="hidden md:flex items-center justify-center text-md tracking-wide space-x-5">
         {navItems.map((item, i) => (
           <Link
             key={i}
