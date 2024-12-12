@@ -15,11 +15,13 @@ function Header() {
     setIsDrawerOpen(!isDrawerOpen);
   };
   return (
-    <header className="flex items-center justify-between space-x-2 font-bold py-5 px-10">
-      <div className="flex">
-        <Link href="/">
-          <Image src={logo2} width={300} alt="logo" />
-        </Link>
+    <header className="flex items-center justify-between space-x-2 font-bold py-1 mx-10 md:py-5 mt-4">
+      <div className="flex items-center space-x-5">
+        <div>
+          <Link href="/">
+            <Image src={logo2} width={220} alt="logo" />
+          </Link>
+        </div>
       </div>
       <div className="md:hidden">
         <MobileMenuButton onClick={handleDrawerToggle} />
