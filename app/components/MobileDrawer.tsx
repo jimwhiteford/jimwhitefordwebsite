@@ -16,18 +16,12 @@ function MobileDrawer({ isOpen, onClose }: any) {
       <button className="absolute right-7 top-7 p-3" onClick={onClose}>
         <FontAwesomeIcon className=" text-3xl" icon={faXmark} />
       </button>
-      <div className="px-10 mt-8">
+      <div className="px-10 mt-9">
         <Link href="/">
-          <Image
-            onClick={onClose}
-            className="mt-3"
-            src={logo2}
-            width={150}
-            alt="logo"
-          />
+          <Image onClick={onClose} src={logo2} width={150} alt="logo" />
         </Link>
       </div>
-      <hr className="border-black my-6 w-full" />
+      <hr className="border-black my-8 w-full" />
       <ul onClick={onClose} className="flex flex-col px-10 space-y-4 text-1xl">
         <li className="hover:underline">
           <Link href="/">Home</Link>
