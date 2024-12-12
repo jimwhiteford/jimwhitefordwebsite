@@ -85,7 +85,7 @@ function NavBar() {
           </Link>
         ))}
       </div>
-      <hr className="border-[#61690b] mt-4" />
+      <hr className="border-neutral-300 mt-2" />
     </div>
   );
 }
