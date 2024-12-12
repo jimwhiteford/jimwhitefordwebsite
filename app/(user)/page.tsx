@@ -22,11 +22,11 @@ async function Homepage() {
   return (
     <div>
       <Hero />
-      <AdBanner
+      {/* <AdBanner
         dataAdFormat="auto"
         dataFullWidthResponsive={true}
         dataAdSlot="5081905516"
-      />
+      /> */}
       <HeroBlogList posts={posts} />
     </div>
   );
