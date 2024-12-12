@@ -5,7 +5,7 @@ function MobileMenuButton({ onClick }: any) {
   return (
     <button className="" onClick={onClick}>
       <FontAwesomeIcon
-        className="text-neutral-700 text-4xl ml-5"
+        className="text-neutral-700 text-2xl ml-5"
         icon={faBars}
       />
     </button>

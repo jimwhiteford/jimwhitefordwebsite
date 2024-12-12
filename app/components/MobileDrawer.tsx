@@ -9,32 +9,35 @@ import insta from "../../public/instagram_2111463.png";
 function MobileDrawer({ isOpen, onClose }: any) {
   return (
     <div
-      className={`fixed flex flex-col z-10 top-0 right-0 h-full w-full bg-white text-black transition-transform duration-300 transform ${
+      className={`fixed flex flex-col z-10 top-0 right-0 h-full w-full bg-white text-neutral-600 transition-transform duration-300 transform ${
         isOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >
-      <button className="absolute right-7 top-5 p-3" onClick={onClose}>
-        <FontAwesomeIcon className="text-neutral-700 text-4xl" icon={faXmark} />
+      <button className="absolute right-7 top-7 p-3" onClick={onClose}>
+        <FontAwesomeIcon className=" text-3xl" icon={faXmark} />
       </button>
-      <div className="px-5 mt-8">
-        <Link href="/" className="">
-          <Image onClick={onClose} src={logo2} width={200} alt="logo" />
+      <div className="px-10 mt-8">
+        <Link href="/">
+          <Image
+            onClick={onClose}
+            className="mt-3"
+            src={logo2}
+            width={150}
+            alt="logo"
+          />
         </Link>
       </div>
       <hr className="border-black my-6 w-full" />
-      <ul
-        onClick={onClose}
-        className="flex flex-col space-y-4 text-neutral-700"
-      >
-        <li className="text-2xl px-10 hover:underline hover:font-semibold">
+      <ul onClick={onClose} className="flex flex-col px-10 space-y-4 text-1xl">
+        <li className="hover:underline">
           <Link href="/">Home</Link>
         </li>
-        <li className="flex text-2xl px-10 hover:underline hover:font-semibold">
+        <li className="hover:underline">
           <Link href="https://www.youtube.com/@offgridjim" target="_blank">
             YouTube
           </Link>
         </li>
-        <li className="flex text-2xl px-10 hover:underline hover:font-semibold">
+        <li className="hover:underline">
           <Link
             href="https://www.instagram.com/jimwhitefordhomesteading"
             target="_blank"
@@ -46,7 +49,7 @@ function MobileDrawer({ isOpen, onClose }: any) {
       <hr className="border-black my-6 w-full" />
       <ul
         onClick={onClose}
-        className="flex flex-col space-y-3 px-10 mb-32 text-2xl text-neutral-700 uppercase"
+        className="flex flex-col px-10 space-y-4 text-1xl uppercase"
       >
         <li className=" hover:underline">
           <Link href="/category/beekeeping">Beekeeping</Link>
