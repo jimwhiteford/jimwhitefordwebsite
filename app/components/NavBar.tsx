@@ -10,13 +10,13 @@ type NavItem = {
 
 const navItems: NavItem[] = [
   {
-    label: "Animal Husbandry",
-    link: "#",
+    label: "Beekeeping",
+    link: "/category/beekeeping",
     children: [
-      {
-        label: "Beekeeping",
-        link: "/category/beekeeping",
-      },
+      // {
+      //   label: "Beekeeping",
+      //   link: "/category/beekeeping",
+      // },
       // {
       //   label: "Chickens",
       //   link: "/category/chickens",
@@ -24,13 +24,13 @@ const navItems: NavItem[] = [
     ],
   },
   {
-    label: "Sustainable Living",
-    link: "#",
+    label: "Off-Grid",
+    link: "/category/off-grid",
     children: [
-      {
-        label: "Off-Grid",
-        link: "/category/off-grid",
-      },
+      // {
+      //   label: "Off-Grid",
+      //   link: "/category/off-grid",
+      // },
       // {
       //   label: "DIY Projects",
       //   link: "#",
@@ -38,17 +38,17 @@ const navItems: NavItem[] = [
     ],
   },
   {
-    label: "Horticulture",
-    link: "#",
+    label: "Gardening",
+    link: "/category/gardening",
     children: [
       // {
       //   label: "Agroforestry",
       //   link: "#",
       // },
-      {
-        label: "Gardening",
-        link: "/category/gardening",
-      },
+      // {
+      //   label: "Gardening",
+      //   link: "/category/gardening",
+      // },
     ],
   },
 ];
