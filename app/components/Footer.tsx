@@ -1,10 +1,10 @@
 import React from "react";
-import logo2 from "../../public/theone.png";
+import logo2 from "../../public/logogreen.png";
 import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="bg-neutral-100">
+    <footer className="bg-neutral-100 mt-20">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -13,7 +13,7 @@ function Footer() {
                 src={logo2}
                 className="me-3"
                 alt="FlowBite Logo"
-                width={200}
+                width={100}
               />
               {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-black">
                 Jim Witeford
@@ -72,12 +72,12 @@ function Footer() {
               </h2>
               <ul className="text-gray-500 font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="/privacy-policy" className="hover:underline">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/terms-conditions" className="hover:underline">
                     Terms &amp; Conditions
                   </a>
                 </li>
