@@ -49,7 +49,7 @@ function TermsConditions() {
           When using jimwhiteford.com, you agree not to:
         </h3>
         <li>
-          Copy, reproduce, distribute, or exploit the website’s content without
+          Copy, reproduce, distribute, or exploit the websites content without
           prior permission.
         </li>
 
@@ -58,7 +58,7 @@ function TermsConditions() {
           related systems.
         </li>
         <li>
-          Engage in activities that disrupt or harm the website’s functionality.
+          Engage in activities that disrupt or harm the websites functionality.
         </li>
         <li>
           Use the website for unlawful purposes, including spamming or
@@ -96,7 +96,7 @@ function TermsConditions() {
           content on jim.whiteford.com, belongs to the owner.
         </li>
         <li>
-          Users may share content from the website (e.g., linking to blog posts)
+          Users may share content from the website e.g., linking to blog posts
           but must obtain permission to copy, reproduce, or distribute any
           material.
         </li>

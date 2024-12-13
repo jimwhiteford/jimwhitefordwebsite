@@ -19,7 +19,7 @@ function PrivacyPolicy() {
       <ul>
         <li>
           We do not collect personal data from users. The only data collected is
-          through cookies, which are used to enhance user experience (UX) by
+          through cookies, which are used to enhance user experience by
           providing personalization.
         </li>
       </ul>
@@ -51,7 +51,7 @@ function PrivacyPolicy() {
       <h2 className="text-3xl">4. Third-Party Services</h2>
       <ul className="space-y-3">
         <li>
-          Google Analytics: Used to analyze traffic and improve the website’s
+          Google Analytics: Used to analyze traffic and improve the websites
           functionality.
         </li>
         <li>
@@ -74,12 +74,12 @@ function PrivacyPolicy() {
           means to access, edit, or delete any information.
         </li>
       </ul>
-      <h2 className="text-3xl">7. Children’s Privacy</h2>
+      <h2 className="text-3xl">7. Childrens Privacy</h2>
       <ul className="space-y-3">
         <li>
           While the blog is not specifically targeted at children, it does not
-          follow laws like COPPA (Children's Online Privacy Protection Act).
-          Parents or guardians should supervise children’s use of the internet.
+          follow laws like Children's Online Privacy Protection Act. Parents or
+          guardians should supervise childrens use of the internet.
         </li>
       </ul>
       <h2 className="text-3xl">8. Policy Updates</h2>
