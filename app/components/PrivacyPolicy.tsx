@@ -11,61 +11,61 @@ function PrivacyPolicy() {
       </p>
       <h2 className="text-3xl">1. Website Details</h2>
       <ul>
-        <li>Name: jimwhiteford.com</li>
-        <li>purpose: The primary purpose of the website is to post blogs.</li>
-        <li>location: The website operates from the United Kingdom.</li>
+        <p>Name: jimwhiteford.com</p>
+        <p>purpose: The primary purpose of the website is to post blogs.</p>
+        <p>location: The website operates from the United Kingdom.</p>
       </ul>
       <h2 className="text-3xl">2. Data Collection</h2>
       <ul>
-        <li>
+        <p>
           We do not collect personal data from users. The only data collected is
           through cookies, which are used to enhance user experience by
           providing personalization.
-        </li>
+        </p>
       </ul>
       <h2 className="text-3xl">3. Cookies and Tracking</h2>
 
       <ul className="space-y-3">
         <h3 className="text-2xl">Types of Cookies Used:</h3>
-        <li>
+        <p>
           Cookies are used for personalization and improving user experience.
-        </li>
+        </p>
         <h3 className="text-2xl">Third-Party Tools:</h3>
-        <li>
+        <p>
           We use Google Analytics to analyze website traffic and performance.
-        </li>
-        <li>
+        </p>
+        <p>
           Google AdSense may display ads on the website, which may use cookies
           for ad personalization.
-        </li>
-        <li>
+        </p>
+        <p>
           Embedded content, such as YouTube videos, may also utilize cookies
           from their respective platforms.
-        </li>
+        </p>
         <h3 className="text-2xl">Cookie Management:</h3>
-        <li>
+        <p>
           Users cannot turn off cookies on this website. By continuing to use
           the website, you consent to the use of cookies.
-        </li>
+        </p>
       </ul>
       <h2 className="text-3xl">4. Third-Party Services</h2>
       <ul className="space-y-3">
-        <li>
+        <p>
           Google Analytics: Used to analyze traffic and improve the websites
           functionality.
-        </li>
-        <li>
+        </p>
+        <p>
           Google AdSense: May use cookies to personalize ads shown on the
           website.
-        </li>
-        <li>
+        </p>
+        <p>
           Embedded Content: Content from platforms like YouTube may collect data
           through their cookies when accessed.
-        </li>
+        </p>
       </ul>
       <h2 className="text-3xl">5. Data Storage and Security</h2>
       <ul className="space-y-3">
-        <li>No user data is stored by jimwhiteford.com.</li>
+        <p>No user data is stored by jimwhiteford.com.</p>
       </ul>
       <h2 className="text-3xl">6. User Rights</h2>
       <ul className="space-y-3">
@@ -76,11 +76,11 @@ function PrivacyPolicy() {
       </ul>
       <h2 className="text-3xl">7. Childrens Privacy</h2>
       <ul className="space-y-3">
-        <li>
+        <p>
           While the blog is not specifically targeted at children, it does not
           follow laws like Children's Online Privacy Protection Act. Parents or
           guardians should supervise childrens use of the internet.
-        </li>
+        </p>
       </ul>
       <h2 className="text-3xl">8. Policy Updates</h2>
       <ul className="space-y-3">
@@ -92,10 +92,10 @@ function PrivacyPolicy() {
       </ul>
       <h2 className="text-3xl">9. Contact Information</h2>
       <ul className="space-y-3">
-        <li>
+        <p>
           At present, there is no direct contact available. Contact options are
           being developed and will be added in the future.
-        </li>
+        </p>
       </ul>
       <hr className="border-neutral-300 w-full" />
       <p>By using jim.whiteford.com, you consent to this Privacy Policy.</p>
